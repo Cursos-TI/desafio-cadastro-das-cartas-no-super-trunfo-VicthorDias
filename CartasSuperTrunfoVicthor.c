@@ -7,6 +7,7 @@
     float area, pib, area2, densidade, densidade2, capita, capita2;
     char nome[30], nome2[30];
     double pib2;
+    float SuperPoder, SuperPoder2;
 
     printf("Digite total da populacao: \n");
     scanf("%i", &populacao);
@@ -26,6 +27,8 @@
     densidade = (float) populacao / area;
 
     capita = (float) pib / populacao;
+
+    SuperPoder = (float) densidade + capita +  area + pib + populacao + turistico;
 
     printf("\n");
         
@@ -50,6 +53,8 @@
 
     printf("\n");
 
+    SuperPoder2 = (float) densidade2 + capita2 +  area2 + pib2 + populacao2 + turistico2;
+
     printf("Carta 1\n");
     printf("Estado A\n");
     printf("Codigo A01\n");
@@ -60,6 +65,7 @@
     printf("Total de pontos turisticos: %i\n", turistico);
     printf("Densidade populacional: %.2f\n", densidade);
     printf("PIB per capita: %.2f\n", capita);
+    printf("Super Poder: %.2f\n", SuperPoder);
     
     printf("\n");
 
@@ -73,5 +79,18 @@
     printf("Total de pontos turisticos: %i\n", turistico2);
     printf("Densidade populacional: %.2f\n", densidade2);
     printf("PIB per capita: %.2f\n", capita2);
+    printf("Super Poder: %.2f\n", SuperPoder2);
+
+    printf("Comparação das carta!\n");
+    printf("Vale ressaltar aparecendo o valor 1, carta 1 ganhou, em caso de aparecer valor 0, carta 2 ganhou!\n");
+    printf("Vencedor quesito População: %d\n", (populacao > populacao2));
+    printf("Vencedor quesito Area km²: %d\n", (area > area2));
+    printf("Vencedor quesito PIB: %d\n", (pib > pib2));
+    printf("Vencedor quesito Pontos Turisticos: %d\n", (turistico > turistico2)); 
+    printf("Vencedor quesito Densidade populacional: %d\n", (densidade < densidade2));
+    printf("Vencedor quesito PIB per capita: %d\n", (pib > pib2));
+    printf("Vencedor quesito Super Poder: %d\n", (SuperPoder > SuperPoder2));
+
+    return 0;
 
  }
