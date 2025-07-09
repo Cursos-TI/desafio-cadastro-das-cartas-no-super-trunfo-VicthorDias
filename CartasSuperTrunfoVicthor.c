@@ -91,6 +91,92 @@
     printf("Vencedor quesito PIB per capita: %d\n", (pib > pib2));
     printf("Vencedor quesito Super Poder: %d\n", (SuperPoder > SuperPoder2));
 
+    printf("\n");
+
+    printf("Comparando as Cartas Vencedoras\n");
+    printf("Primeiro quesito POPULAÇÂO\n");
+    printf("Cidade %s população %d\n", nome, populacao);
+    printf("Cidade %s população %d\n", nome2, populacao2);
+
+    if (populacao > populacao2) {
+      printf("Cidade %s ganhou\n", nome);
+    } else {
+      printf("Cidade %s ganhou\n", nome2);
+    }
+
+    printf("\n");
+    
+    printf("Segundo quesito AREA KM²\n");
+    printf("Cidade %s Area km² %.2lf\n", nome, area);
+    printf("Cidade %s Area km² %.2lf\n", nome2, area2);
+
+    if (area > area2) {
+      printf("Cidade %s ganhou\n", nome);
+    } else {
+      printf("Cidade %s ganhou\n", nome2);
+    }
+    
+    printf("\n");
+    
+    printf("Terceiro quesito PRODUTO INTERNO BRUTO\n");
+    printf("Cidade %s PIB %.2f\n", nome, pib);
+    printf("Cidade %s PIB %.2lf\n", nome2, pib2);
+
+    if (pib > pib2) {
+      printf("Cidade %s ganhou\n", nome);
+    } else {
+      printf("Cidade %s ganhou\n", nome2);
+    }
+    
+    printf("\n");
+
+    printf("Quarto quesito PONTOS TURISTICOS\n");
+    printf("Cidade %s Pontos turisticos %d\n", nome, turistico);
+    printf("Cidade %s Pontos turisticos %d\n", nome2, turistico2);
+
+    if (turistico > turistico2) {
+      printf("Cidade %s ganhou\n", nome);
+    } else {
+      printf("Cidade %s ganhou\n", nome2);
+    }
+
+    printf("\n");
+    
+    printf("Quinto quesito DENSIDADE POPULACIONAL\n");
+    printf("Cidade %s Densidade Populacional %.2f\n", nome, densidade);
+    printf("Cidade %s Densidade Populacional %.2f\n", nome2, densidade2);
+
+    if (densidade < densidade2) {
+      printf("Cidade %s ganhou\n", nome);
+    } else {
+      printf("Cidade %s ganhou\n", nome2);
+    }
+
+    printf("\n");
+
+    printf("Sexto quesito PIB PER CAPITA\n");
+    printf("Cidade %s PIB PER CAPITA %.2f\n", nome, capita);
+    printf("Cidade %s PIB PER CAPITA %.2f\n", nome2, capita2);
+
+    if (capita > capita2) {
+      printf("Cidade %s ganhou\n", nome);
+    } else {
+      printf("Cidade %s ganhou\n", nome2);
+    }
+
+    printf("\n");
+
+    printf("Sexto quesito SUPER PODER\n");
+    printf("Cidade %s SUPER PODER %.2f\n", nome, SuperPoder);
+    printf("Cidade %s SUPER PODER %.2f\n", nome2, SuperPoder2);
+
+    if (SuperPoder > SuperPoder2) {
+      printf("Cidade %s ganhou\n", nome);
+    } else {
+      printf("Cidade %s ganhou\n", nome2);
+    }   
+
+
     return 0;
 
  }
